@@ -1,7 +1,5 @@
 body {
-    font: 400 20px/30px "Graphik LCG", Arial, Helvetica, sans-serif;
-    color: #000;
-    background: #000;
+    font: 400 20px/30px 'montserratthin', Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
@@ -10,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 1320px;
+    width: 1362px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -20,3 +18,33 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: $pink-h2;
+}
+
+p{
+    margin: 0;
+}
+

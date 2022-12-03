@@ -12,43 +12,43 @@
     <div id="wrapper">
         <header id="header">
             <div class="container">
-                <div class="header_wrap">
-                    <div class="logo-wrap header__logo-wrap"></div>
-                    <a href="#">
-                        <img src="images/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="menu-wrap">
-                    <div class="contacts">
-                        <ul>
-                            <li class="lang">
-                                <ul>
-                                    <li>
-                                        <a href="#">УКР</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">РУ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">EN</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="adress">
-                                <a href="https://goo.gl/maps/sRDa4g4wWb3ti56z5">Kyiv, Mechnikova str, 14/1</a>
-                            </li>
-                            <li class="phone">
-                                <a href="tel:0800211927">0800 211 927</a>
-                            </li>
-                            <li class="social">
-                                <a href="https://www.facebook.com/">
-                                    <img src="images/facebook.svg" alt="facebook">
-                                </a>
-                            </li>
-                        </ul>
+                <div class="header-container">
+                    <div class="logo-wrap header__logo-wrap">
+                        <a href="#">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
                     </div>
-                        <nav class="menu header__menu">
-                            <ul>
+                    <div class="menu-wrap">
+                        <div>
+                            <ul class="contacts">
+                                <li>
+                                    <ul class="lang">
+                                        <li>
+                                            <a href="#">УК</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">РУ</a>
+                                        </li>
+                                        <li>
+                                            <a class="active" href="#">EN</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="adress">
+                                    <a href="https://goo.gl/maps/sRDa4g4wWb3ti56z5">Kyiv, Mechnikova str, 14/1</a>
+                                </li>
+                                <li class="phone">
+                                    <a href="tel:0800211927">0800 211 927</a>
+                                </li>
+                                <li class="social">
+                                    <a href="https://www.facebook.com/">
+                                        <img src="images/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <nav>
+                            <ul class="menu header__menu">
                                 <li>
                                     <a href="#">about us</a>
                                 </li>
@@ -66,55 +66,80 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div>      
                 </div>
-            </header>
+            </div>
+        </header>
             <main>
                 <div class="violet-wrapper">
                     <div class="banner">
-                        <img src="images/Symbol.svg" alt="h"> 
-                        <!-- поставить как бэкгрнд -->
-                        <div class="container">
+                        <img class="banner_bg" src="images/Symbol.svg" alt="h"> 
+                        <div class="container banner__container">
                             <h1>you legal solutions provider</h1>
                             <a href="#">
                                 <img src="images/scroll.svg" alt="down">
                             </a>
                         </div>
                     </div>
-                    <div class="goals">
-                        <div class="container"></div>
+                    <div class="switcher">
+                        <div class="container switcher__container">
+                            <input type="radio" id="consistent" value="consistent" name="switcher">
+                            <input type="radio" id="customer-oriented" value="customer-oriented" name="switcher" checked>
+                            <input type="radio" id="innovative" value="innovative" name="switcher">
+                            <input type="radio" id="business-oriented" value="business-oriented" name="switcher">
+                            <ul class="switcher__wrapp">
+                                <li class="switcher__item">
+                                    <label for="consistent">Consistent</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <label for="customer-oriented">Customer oriented</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <label for="innovative">Innovative</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <label for="business-oriented">Business oriented</label>
+                                </li>
+                            </ul>
+                            <div class="switcher-info">
+                                <h3 class="subtitle">We turn the idea of legal services</h3>
+                                <p class="switcher-info__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="services">
+                    <div class="skill">
                         <div class="container">
-                            <a href="#">services > </a>
-                            <h2>What can we do better than others?</h2>
-                            <ul>
-                                <li>
+                            <a href="#">
+                                <span class="link">services ></span>
+                            </a>
+                            <h2 class="h2">What can we do better than others?</h2>
+                            <ul class="skill__list">
+                                <li class="skill__item">
                                     <img src="images/icon1.svg" alt="it">
                                     <h3>IT and e-commerce</h3>
                                     <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                                 </li>
-                                <li>
+                                <li class="skill__item">
                                     <img src="images/icon2.svg" alt="it">
                                     <h3>Comprehensive daily legal support</h3>
                                     <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
                                 </li>
-                                <li>
+                                <li class="skill__item">
                                     <img src="images/icon3.svg" alt="it">
                                     <h3>Structuring corporate relationships</h3>
                                     <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
                                 </li>
-                                <li>
+                                <li class="skill__item">
                                     <img src="images/icon4.svg" alt="it">
                                     <h3>Building contractual relations</h3>
                                     <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
                                 </li>
-                                <li>
+                                <li class="skill__item">
                                     <img src="images/icon5.svg" alt="it">
                                     <h3>Protection of business, intellectual property</h3>
                                     <p>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
                                 </li>
-                                <li>
+                                <li class="skill__item">
                                     <img src="images/icon6.svg" alt="it">
                                     <h3>Judicial representation</h3>
                                     <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
@@ -124,15 +149,17 @@
                     </div>
                 </div>
                 <div class="white-wrapper">
-                    <div class="team-gallery">
-                        <div class="container">
-                            <div class="gallery-wrap">
-                                <div class="photo-team">
-                                    <img src="#" alt="photo">
+                    <div class="team">
+                        <div class="container team__container">
+                            <div class="team__wrap">
+                                <div class="team__photo">
+                                    <img src="images/team.png" alt="photo">
                                 </div>
-                                <div class="info-team">
-                                    <a href="#">команда ></a>
-                                    <blockquote>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</blockquote>
+                                <div class="team__info">
+                                    <a  class="link team__link" href="#">
+                                        <span>команда ></span>
+                                    </a>
+                                    <h2><blockquote>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</blockquote></h2>
                                     <p class="name">Олександр Олександровський</p>
                                     <p class="position">Керуючий партнер</p>
                                 </div>

@@ -1,0 +1,42 @@
+.white-wrapper{
+    background: $white;
+}
+
+.team{
+    
+    &__wrap{
+        max-width: 1300px;
+        background: $grey-team;
+        margin: 70px 0;
+        display: flex;
+    }
+
+    &__photo{
+        width: 30%;
+
+    }
+
+    &__info{
+        width: 70%;
+    }
+
+    &__link{
+        margin: 0 36px;
+    }
+}
+
+.name,
+.position{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:$grey-team2;
+    padding: 0 0 0 41px;
+}
+
+.position{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
