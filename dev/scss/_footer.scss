@@ -1,0 +1,43 @@
+.footer{
+    position: relative;
+
+    &__contacts{
+        justify-content: space-between;
+    }
+
+    &__adress-list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__adress--color{
+        color:$dark-blue;
+    }
+
+    &__map{
+        text-transform: uppercase;
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+    
+    }
+
+    &__phone,
+    &__email,
+    &__map{
+        color:$dark-blue; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px 10px;
+    }
+}
+
+.dev{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-team2;
+}

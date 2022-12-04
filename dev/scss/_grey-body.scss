@@ -1,0 +1,32 @@
+
+.article{
+    display: flex;
+    margin: 0 -10px;
+    border-bottom: 2px solid $grey-separator;
+    padding-bottom: 20px;
+
+    &__container{
+        max-width: calc(100% / 3 - 20px);
+        background: $white;
+        padding: 10px 20px;
+        margin: 0 10px;
+    }
+
+    &__date{
+        color: $grey-team2;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__link{
+        border-bottom: 4px solid $grey-separator;
+        padding: 0 0 15px 0;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

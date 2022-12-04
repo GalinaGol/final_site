@@ -40,3 +40,71 @@
     line-height: 22px;
 }
 
+// partners
+
+.partners{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 120px 120px 120px;
+    text-align: center;
+}
+
+#hillel{
+    background: $hillel;
+    padding: 37px 0;
+}
+
+#wannabiz{
+    background: $wannabiz;
+    padding: 37px 0;
+}
+
+#tapgerine{
+    background: $tapgerine;
+    padding: 37px 0;
+}
+
+#tdlook{
+    background: $tdlook;
+    padding: 37px 0;
+}
+
+#orangear{
+    background: $orangear;
+    padding: 37px 0;
+}
+
+#adtelligent{
+    background: $adtelligent;
+    padding: 37px 0;
+}
+
+#clickky{
+    background: $clickky;
+    padding: 25px 0;
+}
+
+#ecoleasing{
+    background: $ecoleasing;
+    padding: 18px 0;
+}
+
+#infratek{
+    background: $infratek;
+    padding: 29px 0;
+}
+
+#city-park{
+    background: $city-park;
+    padding: 44px 0;
+}
+
+#art-print{
+    background: $art-print;
+    padding: 32px 0;
+}
+
+#ultimate-card{
+    background: $black;
+    padding: 10px 0;
+}
