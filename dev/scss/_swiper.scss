@@ -1,0 +1,11 @@
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active{
+    background: $blue-link;
+    height: 16px;
+    width: 16px;
+}

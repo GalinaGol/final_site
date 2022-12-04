@@ -16,6 +16,9 @@
 
     &__map{
         text-transform: uppercase;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 20px 10px;
     }
 
     &__social{
@@ -25,13 +28,16 @@
     }
 
     &__phone,
-    &__email,
-    &__map{
+    &__email{
         color:$dark-blue; 
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         padding: 20px 10px;
+    }
+
+    &__email{
+        color: $blue-link;
     }
 }
 

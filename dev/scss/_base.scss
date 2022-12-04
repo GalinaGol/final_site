@@ -52,4 +52,18 @@ p{
     background: $grey-bg;
 }
 
+blockquote{
+    margin: 0;
+}
 
+.white-wrapper{
+    background: $white;
+}
+
+.link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $blue-link;
+    text-transform: uppercase;
+}
