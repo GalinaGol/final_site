@@ -52,10 +52,6 @@ p{
     background: $grey-bg;
 }
 
-blockquote{
-    margin: 0;
-}
-
 .white-wrapper{
     background: $white;
 }
@@ -67,3 +63,9 @@ blockquote{
     color: $blue-link;
     text-transform: uppercase;
 }
+
+.icon::after{
+    content: "\ea50";
+    font-family: 'icomoon' !important;
+}
+

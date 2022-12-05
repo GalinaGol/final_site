@@ -38,65 +38,11 @@ h1{
     margin: 0;
 }
 
-#consistent,
-#customer-oriented,
-#innovative,
-#business-oriented{
-    opacity: 0;
-    position: absolute;
-    visibility: hidden;
-    
-}
-
-// #customer-oriented {
-//     &:checked{
-//         .switcher-info{
-//             display: none;
-//         }
-//     }
-// }
-
-.switcher{
-    color: $white;
-
-    &__container{
-        display: flex;
-        max-width: 1200px;
-    }
-
-    &__item{
-        padding: 20px 46px;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
-    }
-}
-
-.switcher__wrapp{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    border-right: 4px solid $grey-line;
-    align-items: flex-end;
-}
-
-.switcher-info{
-    padding-left: 30px;
-    max-width: 60%;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 30px;
-
-    &__text{
-        padding: 0 48px;
-    }
-}
-
 .subtitle{
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
-    padding: 79px 54px 10px;
+    padding: 51px 3px 32px;
 }
 
 .switcher__item>label{
