@@ -2,6 +2,24 @@
     display: flex;
     position: absolute;
     width: 100%;
+
+    .adress,
+    .social,
+    .phone{
+
+        &::before{
+            content: '';
+            position: absolute;
+            height:6px;
+            width: 6px;
+            background-color: white;
+            border-radius: 50%;
+            top: 12px;
+            left: auto;
+            margin: 0 -4px;
+        }
+    }
+
 }
 
 .header-container {
@@ -33,7 +51,7 @@
 
 .contacts{
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 
 .lang {
@@ -54,23 +72,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-}
-
-.adress,
-.social,
-.phone{
-
-    &::before{
-        content: '';
-        position: absolute;
-        height:6px;
-        width: 6px;
-        background-color: white;
-        border-radius: 50%;
-        top: 12px;
-        left: auto;
-        margin: 0 -4px;
-    }
 }
 
 .active {

@@ -1,13 +1,19 @@
 .footer{
     position: relative;
 
+    &__grey-wrapper{
+        padding-bottom: 20;
+    }
+
     &__contacts{
         justify-content: space-between;
+        padding-bottom: 0px;
     }
 
     &__adress-list{
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     &__adress--color{
@@ -18,12 +24,15 @@
         text-transform: uppercase;
         font-size: 12px;
         line-height: 15px;
-        padding: 20px 10px;
+        padding: 17px 20px;
     }
 
     &__social{
         display: flex;
         align-items: center;
+        position: relative;
+        padding: 0 0 20px;
+
     
     }
 
@@ -33,7 +42,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
-        padding: 20px 10px;
+        padding: 13px 11px;
     }
 
     &__email{
@@ -46,4 +55,48 @@
     font-size: 16px;
     line-height: 20px;
     color: $grey-team2;
+}
+
+.footer__contacts>li{
+    margin: 0 4px;
+}
+
+.social{
+    margin-right: 4px;
+}
+
+.footer{
+    
+    .adress,
+    .phone{
+        &::after{
+            content:"";
+            position: absolute;
+            height:6px;
+            width: 6px;
+            background-color: $grey-team2;
+            border-radius: 50%;
+            top: 22px;
+            left: auto;
+            margin: 0 7px;
+            
+        }
+    }
+}
+
+.footer{
+    
+    .phone{
+        &::before{
+            content:"";
+            position: absolute;
+            height:6px;
+            width: 6px;
+            background-color: $grey-team2;
+            border-radius: 50%;
+            top: 21px;
+            left: auto;
+            margin: 0 -11px;
+        }
+    }
 }
