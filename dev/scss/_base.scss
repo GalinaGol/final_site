@@ -8,9 +8,15 @@ body {
 }
 
 .container {
-    width: 1362px;
+    max-width: 1362px;
     padding: 0 20px;
     margin: 0 auto;
+
+    @media (min-width: 576px){
+        max-width:576px;
+    }
+
+
 }
 
 img {
@@ -32,6 +38,28 @@ a {
     text-decoration: none;
 }
 
+h1{
+    padding: 50px 0 50px;
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    bottom: 36px;
+    left: 27px;
+
+    @media (min-width: 576px){
+        padding: 183px 0 316px;
+        bottom: 109px;
+        right: 425px;
+    }
+
+    @media (min-width: 992px){
+        padding: 183px 0 316px;
+        bottom: 109px;
+        right: 425px;
+    }
+
+}
+
 h3{
     margin: 0;
     padding: 0;
@@ -41,7 +69,10 @@ h2{
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
-    color: #F0145A;
+    background: linear-gradient(33deg, #F0145A 1%,#EF8080 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
 }
 
 p{
@@ -69,3 +100,9 @@ p{
     font-family: 'icomoon' !important;
 }
 
+.active-h{
+    background: linear-gradient(33deg, #EF8080 1%, #F0145A 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}

@@ -1,0 +1,263 @@
+.violet-wrapper{
+    background: $violet;
+    border-radius: 0px 0px 12px 12px;
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        background-color: $grey-sh-1;
+        height: 10px;
+        width: calc(100% - 20px);
+        border-radius: 0px 0px 12px 12px;
+
+    }
+}
+
+.banner{
+    text-align: center;
+    
+    padding-bottom: 12px;
+
+    &__container{
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+.subtitle{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 51px 3px 32px;
+}
+
+.switcher__item>label{
+    cursor: pointer;
+}
+
+.skill{
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        width: calc(100% / 3);
+        padding: 45px 45px 67px 19px;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        background-color: $grey-sh-2;
+        height: 20px;
+        width: calc(100% - 40px);
+        border-radius: 0px 0px 12px 12px;
+    }
+
+}
+
+.skill__item>h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $blue-link;
+    padding: 15px 4px 15px 0px;
+}
+
+// white wrapper
+
+
+.team{
+    
+    &__wrap{
+        max-width: 1300px;
+        background: $grey-team;
+        margin: 70px 0;
+        display: flex;
+    }
+
+    &__photo{
+        width: 30%;
+
+    }
+
+    &__info{
+        width: 70%;
+        padding: 0 30px;
+    }
+
+    &__link{
+        margin: 0 36px;
+    }
+}
+
+.quote{
+    margin: 0;
+    padding-bottom: 10px;
+   
+}
+
+.name,
+.position{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:$grey-team2;
+}
+
+.position{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+// partners
+
+.partners{
+    text-align: center;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 120px 120px 120px;
+        text-align: center;
+    }
+
+    &__title{
+        color: $dark-blue;
+        padding: 57px 0 30px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+}
+
+#hillel{
+    background: $hillel;
+    padding: 37px 0;
+}
+
+#wannabiz{
+    background: $wannabiz;
+    padding: 37px 0;
+}
+
+#tapgerine{
+    background: $tapgerine;
+    padding: 37px 0;
+}
+
+#tdlook{
+    background: $tdlook;
+    padding: 37px 0;
+}
+
+#orangear{
+    background: $orangear;
+    padding: 37px 0;
+}
+
+#adtelligent{
+    background: $adtelligent;
+    padding: 37px 0;
+}
+
+#clickky{
+    background: $clickky;
+    padding: 25px 0;
+}
+
+#ecoleasing{
+    background: $ecoleasing;
+    padding: 18px 0;
+}
+
+#infratek{
+    background: $infratek;
+    padding: 29px 0;
+}
+
+#city-park{
+    background: $city-park;
+    padding: 44px 0;
+}
+
+#art-print{
+    background: $art-print;
+    padding: 32px 0;
+}
+
+#ultimate-card{
+    background: $black;
+    padding: 10px 0;
+}
+
+// grey wrapper
+
+.publications{
+
+    &__container{
+        padding: 30px 0 20px;
+    }
+
+    &__h2{
+        margin: 10px 0 30px;
+    }
+}
+
+.article{
+    display: flex;
+    border-bottom: 2px solid $grey-separator;
+    padding-bottom: 30px;
+
+    &__container{
+        max-width: calc(100% / 3 - 20px);
+        background: $white;
+        margin: 0 10px;
+        text-align: center;
+        border-radius: 8px 8px 0px 0px;;
+    }
+
+    &__date{
+        color: $grey-team2;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__link,
+    &__text{
+        padding: 0 33px 10px 23px;
+        text-align: left;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 13px 33px 24px 23px;
+    }
+
+    &__link{
+        border-bottom: 4px solid $grey-separator;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+}
+
+.article img{
+    width: 100%;
+}

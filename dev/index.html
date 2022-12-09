@@ -13,12 +13,14 @@
     <div id="wrapper">
         <header id="header">
             <div class="container">
-                <div class="header-container">
+                <div class="header-holder">
                     <div class="logo-wrap header__logo-wrap">
                         <a href="#">
                             <img src="images/logo.svg" alt="logo">
                         </a>
                     </div>
+                    <input type="checkbox" id="burger">
+                    <label for="burger" class="burger">menu</label>
                     <div class="menu-wrap">
                         <div>
                             <ul class="contacts">
@@ -89,16 +91,16 @@
                             <input type="radio" id="innovative" value="innovative" name="switcher">
                             <input type="radio" id="business-oriented" value="business-oriented" name="switcher">
                             <ul class="switcher__wrapp">
-                                <li class="switcher__item">
+                                <li class="switcher__item active-h">
                                     <label for="consistent">Consistent</label>
                                 </li>
-                                <li class="switcher__item">
+                                <li class="switcher__item ">
                                     <label for="customer-oriented">Customer oriented</label>
                                 </li>
-                                <li class="switcher__item">
+                                <li class="switcher__item ">
                                     <label for="innovative">Innovative</label>
                                 </li>
-                                <li class="switcher__item">
+                                <li class="switcher__item ">
                                     <label for="business-oriented">Business oriented</label>
                                 </li>
                             </ul>
@@ -285,7 +287,7 @@
                                     </div>
                                     <div class="article__link">
                                         <h4 class="link">Equity associate</h4>
-                                        <p class="article__date">April 22</p>
+                                        <time  class="article__date" datatime="2022-04-22">April 22</time>
                                     </div>
                                     <div class="article__text">
                                         <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
@@ -297,7 +299,7 @@
                                     </div>
                                     <div class="article__link">
                                         <h4 class="link">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
-                                        <p class="article__date">September 29</p>
+                                        <time class="article__date" datatime="2022-09-29">September 29</time>
                                     </div>
                                     <div class="article__text">
                                         <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
@@ -309,7 +311,7 @@
                                     </div>
                                     <div class="article__link">
                                         <h4 class="link">Millennial Testament</h4>
-                                        <p class="article__date">August 19</p>
+                                        <time class="article__date" datatime="2022-08-19">August 19</time>
                                     </div>
                                     <div class="article__text">
                                         <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
