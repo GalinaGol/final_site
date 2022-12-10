@@ -24,19 +24,13 @@
         width: 100%;
         position: relative;
     }
+
+    &__bg{
+        padding: 0 0 0 20px;
+    }
 }
 
 
-.subtitle{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-    padding: 51px 3px 32px;
-}
-
-.switcher__item>label{
-    cursor: pointer;
-}
 
 .skill{
     color: $white;
@@ -45,13 +39,24 @@
     line-height: 26px;
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
+
+        display: block;
+
+            @media (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
     }
 
     &__item{
-        width: calc(100% / 3);
-        padding: 45px 45px 67px 19px;
+        width: 100%;
+        padding: 45px 45px 18px 10px;
+
+            @media (min-width:768px) {
+                width: calc(100% / 3);
+                padding: 45px 45px 67px 19px;
+            }
+
     }
 
     &:after{
@@ -72,34 +77,55 @@
     font-size: 22px;
     line-height: 27px;
     color: $blue-link;
-    padding: 15px 4px 15px 0px;
+    padding: 28px 4px 15px 0px;
 }
 
 // white wrapper
 
 
 .team{
+
+    padding: 50px 0;
     
     &__wrap{
-        max-width: 1300px;
         background: $grey-team;
-        margin: 70px 0;
-        display: flex;
+
+            @media (min-width:768px) {
+                max-width: 1300px;
+                margin: 70px 0;
+                display: flex;
+            }
+
     }
 
     &__photo{
-        width: 30%;
+        width: 100%;
 
+            @media (min-width:768px) {
+                width: 30%;
+            }
     }
 
     &__info{
-        width: 70%;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 30px 23px;
+
+            @media (min-width:768px) {
+                width: 70%;
+            }
     }
 
     &__link{
         margin: 0 36px;
     }
+}
+
+.team__photo>img{
+    border-radius: 12px 12px 0px 0px;
+
+        @media (min-width:768px) {
+            border-radius: 12px 0px 0px 12px;
+        }
 }
 
 .quote{
@@ -114,6 +140,7 @@
     font-size: 16px;
     line-height: 20px;
     color:$grey-team2;
+    padding: 4px 0;
 }
 
 .position{
@@ -128,10 +155,15 @@
     text-align: center;
 
     &__grid{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 120px 120px 120px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width:768px) {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 120px 120px 120px;
+            text-align: center;
+        }
     }
 
     &__title{
@@ -152,6 +184,7 @@
 #wannabiz{
     background: $wannabiz;
     padding: 37px 0;
+    
 }
 
 #tapgerine{
@@ -177,31 +210,61 @@
 #clickky{
     background: $clickky;
     padding: 25px 0;
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
 }
 
 #ecoleasing{
     background: $ecoleasing;
     padding: 18px 0;
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
 }
 
 #infratek{
     background: $infratek;
     padding: 29px 0;
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
 }
 
 #city-park{
     background: $city-park;
     padding: 44px 0;
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
 }
 
 #art-print{
     background: $art-print;
     padding: 32px 0;
-}
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
+    }
 
 #ultimate-card{
     background: $black;
     padding: 10px 0;
+    display: none;
+
+        @media (min-width:768px) {
+            display: block;
+        }
 }
 
 // grey wrapper
@@ -209,25 +272,34 @@
 .publications{
 
     &__container{
-        padding: 30px 0 20px;
+        padding: 30px 0 20px 10px;
     }
 
     &__h2{
-        margin: 10px 0 30px;
+        margin: 10px 20px 30px 0;
     }
 }
 
 .article{
-    display: flex;
+    display: block;
     border-bottom: 2px solid $grey-separator;
     padding-bottom: 30px;
 
+        @media (min-width:768px) {
+            display: flex;
+        }
+
     &__container{
-        max-width: calc(100% / 3 - 20px);
+        max-width: 100%;
         background: $white;
-        margin: 0 10px;
+        margin: 15px 10px;
         text-align: center;
-        border-radius: 8px 8px 0px 0px;;
+        border-radius: 8px 8px 0px 0px;
+
+            @media (min-width:768px) {
+                max-width: calc(100% / 3 - 20px);
+                margin: 0 10px;
+            }
     }
 
     &__date{
