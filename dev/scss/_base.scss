@@ -38,13 +38,19 @@ h1{
     margin: 0 auto;
     position: absolute;
     line-height: 36px;
-    bottom: 140px;
+    bottom: 84px;
     right: 37px;
 
     @media (min-width: 576px){
         bottom: 300px;
-        right: 41px;
+        right: 30px;
     }
+
+    @media (min-width: 768px){
+        bottom: 450px;
+        right: 93px;
+    }
+
 
     @media (min-width: 992px){
         bottom: 400px;
@@ -68,11 +74,15 @@ h2{
     -webkit-text-fill-color: transparent;
     color: #0B2349;
 
-    @media (min-width: 992px){
-        font-size: 38px;
-        line-height: 46px;
-        padding: 0 ;
-    }
+        @media (min-width: 768px){
+            font-size: 38px;
+            line-height: 46px;
+            padding: 0 42px;
+        }
+
+        @media (min-width: 992px){
+            padding: 0 ;
+        }
 }
 
 p{
@@ -93,6 +103,18 @@ p{
     line-height: 17px;
     color: $blue-link;
     text-transform: uppercase;
+
+        &:hover{
+            color: $pink-a;
+        }
+
+        @media (min-width: 768px){
+            padding: 0 36px;
+        }
+
+        @media (min-width: 992px){
+            padding: 0;
+        }
 }
 
 .icon::after{

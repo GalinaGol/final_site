@@ -73,7 +73,7 @@
     &__container{
         display: block;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             display: flex;
 
         }
@@ -86,9 +86,17 @@
         font-size: 33px;
         line-height: 33px;
 
+        &:hover{
+            color: $pink-a;
+        }
+
         @media (min-width: 768px) {
             padding: 20px 46px;
-            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        @media (min-width: 992px) {
             font-size: 38px;
             line-height: 46px;
         }
@@ -100,8 +108,9 @@
         font-weight: 400;
         font-size: 19px;
         line-height: 30px;
+        min-height: 278px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             padding-left: 75px;
             max-width: 60%;
             font-weight: 400;
@@ -122,7 +131,7 @@
     width: 100%;
     overflow: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         border-right: 4px solid $grey-line;
         flex-direction: column;
         width: 40%;
@@ -137,9 +146,12 @@
     padding: 10px 103px 32px 0;
 
     @media (min-width: 768px) {
-        font-weight: 700;
+        padding: 20px 30px;
         font-size: 30px;
         line-height: 37px;
+    }
+
+    @media (min-width: 992px) {
         padding: 50px 3px 32px;
     }
 
@@ -149,6 +161,10 @@
     padding: 19px 61px 0 0;
 
     @media (min-width: 768px) {
+        padding: 24px 55px 0 28px;
+    }
+
+    @media (min-width: 992px) {
         padding: 0;
     }
 }

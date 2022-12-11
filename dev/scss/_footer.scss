@@ -10,6 +10,7 @@
 
     &__contacts{
         display: block;
+
         @media (min-width:768px) {
             display: flex;
             justify-content: space-between;
@@ -39,17 +40,20 @@
         
         a{
             color:$blue-link;
+            padding: 0 ;
         }
 
     }
 
     &__social{
+        overflow: hidden;
+        padding: 0 0 65px;
 
-        padding: 0 0 20px;
         @media (min-width:768px) {
             display: flex;
             align-items: center;
             position: relative;
+            padding: 0 0 20px;
         }
     
     }
@@ -65,6 +69,10 @@
 
     &__email{
         color: $blue-link;
+
+        &:hover{
+            color: $pink-a;
+        }
     }
 }
 
@@ -73,7 +81,13 @@
     font-size: 16px;
     line-height: 20px;
     color: $grey-team2;
-    order: -2;
+    top: 188px;
+    left: 42px;
+    position: absolute;
+
+        @media (min-width:768px) {
+            position:static;
+        }
 
 }
 
@@ -97,9 +111,9 @@
             width: 6px;
             background-color: $grey-team2;
             border-radius: 50%;
-            top: 22px;
+            top: 19px;
             left: auto;
-            margin: 0 7px;
+            margin: 0px;
 
             @media (min-width:768px) {
                 display: block;
@@ -107,11 +121,18 @@
             
         }
     }
+
+    .adress::after{
+        top: 21px;
+        left: 191px;
+    }
 }
 
 .footer{
     
     .phone{
+        position: relative;
+
         &::before{
             content:"";
             display: none;
@@ -120,8 +141,8 @@
             width: 6px;
             background-color: $grey-team2;
             border-radius: 50%;
-            top: 21px;
-            left: auto;
+            top: 18px;
+            left: 127px;
             margin: 0 -11px;
 
             @media (min-width:768px) {

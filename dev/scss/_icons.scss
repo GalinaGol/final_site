@@ -32,12 +32,22 @@
     color: #fff;
     font-size: 24px;
   }
+
   .icon-facebook-b:before {
     content: "\e902";
     color: #24a3ff;
     font-size: 38px;
+
+    &:hover{
+      color: $pink-a;
+    }
   }
   .icon-ctrl:before {
     content: "\ea50";
+  }
+
+  .icon-Vector,
+  .icon-facebook-b:hover{
+    color: $pink-a;
   }
   
