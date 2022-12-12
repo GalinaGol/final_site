@@ -2,6 +2,13 @@
     position: relative;
     text-align: center;
 
+    &__container{
+        @media (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
 
     &__grey-wrapper{
@@ -10,12 +17,6 @@
 
     &__contacts{
         display: block;
-
-        @media (min-width:768px) {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 0px;
-        }
     }
 
     &__adress-list{
@@ -27,10 +28,10 @@
         }
     }
 
-    &__adress--color{
-        color:$dark-blue;
-        display: block;
-    }
+    // &__adress--color{
+    //     color:$dark-blue;
+    //     display: block;
+    // }
 
     &__map{
         text-transform: uppercase;
@@ -47,7 +48,7 @@
 
     &__social{
         overflow: hidden;
-        padding: 0 0 65px;
+        padding: 0 0 11px;
 
         @media (min-width:768px) {
             display: flex;
@@ -72,6 +73,7 @@
 
         &:hover{
             color: $pink-a;
+            transition: all .5s;
         }
     }
 }
@@ -81,14 +83,13 @@
     font-size: 16px;
     line-height: 20px;
     color: $grey-team2;
-    top: 188px;
-    left: 42px;
-    position: absolute;
+    padding-bottom: 15px;
 
-        @media (min-width:768px) {
-            position:static;
-        }
-
+    @media (min-width:768px){
+        margin-top: -37px;
+        padding-bottom: 0;
+    }
+    
 }
 
 .footer__contacts>li{

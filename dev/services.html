@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>Services</title>
 </head>
 <body>
     <div id="wrapper">
-        <header id="header">
+        <header class="header">
             <div class="container header__container">
                 <div class="header-holder">
-                    <div class="logo-wrap header__logo-wrap">
-                        <a href="#">
+                    <div class="logo-wrap header__logo-wrap-s">
+                        <a href="../public/index.html">
                             <img src="images/logo.svg" alt="logo">
                         </a>
+                        <div class="services-logo">
+                            <p class="services-logo__text">services</p>
+                        </div>
                     </div>
                     <div class="menu-wrap">
                         <div>
@@ -51,10 +54,10 @@
                             <span>menu</span></label>
                         <nav class="menu header__menu">
                             <ul class="menu-list">
-                                <li class="active-menu">
-                                    <a href="#" >about us</a>
-                                </li>
                                 <li>
+                                    <a href="../public/index.html" >about us</a>
+                                </li>
+                                <li class="active-menu">
                                     <a href="#">services</a>
                                 </li>
                                 <li>
@@ -74,91 +77,38 @@
         </header>
             <main>
                 <div class="violet-wrapper">
-                    <div class="banner">
-                        <img class="banner__bg" src="images/Symbol.svg" alt="h"> 
-                        <div class="container banner__container">
-                            <h1>you legal solutions provider</h1>
-                            <a href="#">
-                                <img src="images/scroll.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="switcher">
-                        <div class="container switcher__container">
-                            <input type="radio" id="consistent" value="consistent" name="switcher" checked>
-                            <input type="radio" id="customer-oriented" value="customer-oriented" name="switcher">
-                            <input type="radio" id="innovative" value="innovative" name="switcher">
-                            <input type="radio" id="business-oriented" value="business-oriented" name="switcher">
-                            <ul class="switcher__wrapp">
-                                <li class="switcher__item active-h">
-                                    <label for="consistent">Consistent</label>
-                                </li>
-                                <li class="switcher__item ">
-                                    <label for="customer-oriented">Customer oriented</label>
-                                </li>
-                                <li class="switcher__item ">
-                                    <label for="innovative">Innovative</label>
-                                </li>
-                                <li class="switcher__item ">
-                                    <label for="business-oriented">Business oriented</label>
-                                </li>
-                            </ul>
-                            <div class="switcher__info">
-                                <div class="slide">
-                                    <h3 class="subtitle">We turn the idea of legal services</h3>
-                                    <p class="switcher__info-text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
-                                </div>
-                                <div class="slide">
-                                    <h3 class="subtitle">Comprehensive daily legal support</h3>
-                                    <p class="switcher__info-text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
-                                </div>
-                                <div class="slide">
-                                    <h3 class="subtitle">Structuring corporate relationships</h3>
-                                    <p class="switcher__info-text">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
-                                </div>
-                                <div class="slide">
-                                    <h3 class="subtitle">Building contractual relations</h3>
-                                    <p class="switcher__info-text">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
                     <div class="skill">
                         <div class="container">
-                            <a href="#">
-                                <span class="link icon">services</span>
-                            </a>
-                            <h2 class="h2">What can we do better than others?</h2>
+                            <h2 class="h2 h2--p">What can we do better than others?</h2>
                             <ul class="skill__list">
                                 <li class="skill__item">
                                     <img src="images/icon1.svg" alt="it">
-                                    <h3>IT and e-commerce</h3>
+                                    <a href="#" class="link link-sz"><h3>IT and e-commerce</h3></a>
                                     <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                                 </li>
                                 <li class="skill__item">
                                     <img src="images/icon2.svg" alt="it">
-                                    <h3>Comprehensive daily legal support</h3>
+                                    <a href="#" class="link link-sz"><h3>Comprehensive daily legal support</h3></a>
                                     <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
                                 </li>
                                 <li class="skill__item">
                                     <img src="images/icon3.svg" alt="it">
-                                    <h3>Structuring corporate relationships</h3>
+                                    <a href="#" class="link link-sz"><h3>Structuring corporate relationships</h3></a>
                                     <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
                                 </li>
                                 <li class="skill__item">
                                     <img src="images/icon4.svg" alt="it">
-                                    <h3>Building contractual relations</h3>
+                                    <a href="#" class="link link-sz"><h3>Building contractual relations</h3></a>
                                     <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
                                 </li>
                                 <li class="skill__item">
                                     <img src="images/icon5.svg" alt="it">
-                                    <h3>Protection of business, intellectual property</h3>
+                                    <a href="#" class="link link-sz"><h3>Protection of business, intellectual property</h3></a>
                                     <p>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
                                 </li>
                                 <li class="skill__item">
                                     <img src="images/icon6.svg" alt="it">
-                                    <h3>Judicial representation</h3>
+                                    <a href="#" class="link link-sz"><h3>Judicial representation</h3></a>
                                     <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
                                 </li>
                             </ul>
@@ -166,70 +116,6 @@
                     </div>
                 </div>
                 <div class="white-wrapper">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="team">
-                                    <div class="container team__container">
-                                        <div class="team__wrap">
-                                            <div class="team__photo">
-                                                <img src="images/Team-1.jpg" alt="photo">
-                                            </div>
-                                            <div class="team__info">
-                                                <a class="link team__link" href="#">
-                                                    <p class="icon">команда</p>
-                                                </a>
-                                                <h2 class="quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                                                <p class="name">Олександр Олександровський</p>
-                                                <p class="position">Керуючий партнер</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="team">
-                                    <div class="container team__container">
-                                        <div class="team__wrap">
-                                            <div class="team__photo">
-                                                <img src="images/Team-1.jpg" alt="photo">
-                                            </div>
-                                            <div class="team__info">
-                                                <a  class="link team__link" href="#">
-                                                    <p class="icon">команда</p>
-                                                </a>
-                                                <h2 class="quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                                                <p class="name">Олександр Олександровський</p>
-                                                <p class="position">Керуючий партнер</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="team">
-                                    <div class="container team__container">
-                                        <div class="team__wrap">
-                                            <div class="team__photo">
-                                                <img src="images/Team-1.jpg" alt="photo">
-                                            </div>
-                                            <div class="team__info">
-                                                <a  class="link team__link" href="#">
-                                                    <p class="icon">команда</p>
-                                                </a>
-                                                <h2 class="quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
-                                                <p class="name">Олександр Олександровський</p>
-                                                <p class="position">Керуючий партнер</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
                     <div class="partners">
                         <h3 class="partners__title">They already trust us</h3>
                         <div class="partners__grid">
@@ -272,59 +158,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="grey-wrapper">
-                    <div class="publications">
-                        <div class="container publications__container">
-                            <a href="#" class="link  publications__link">
-                                <p class="icon">Publications</p>
-                            </a>
-                            <h2 class="h2 publications__h2">We have something to tell</h2>
-                            <ul class="article">
-                                <li class="article__container">
-                                    <div class="article__photo">
-                                        <img src="images/equity-associate.png" alt="equity-associate">
-                                    </div>
-                                    <div class="article__link">
-                                        <h4 class="link">Equity associate</h4>
-                                        <time  class="article__date" datatime="2022-04-22">April 22</time>
-                                    </div>
-                                    <div class="article__text">
-                                        <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-                                    </div>
-                                </li>
-                                <li class="article__container">
-                                    <div class="article__photo">
-                                        <img src="images/gdpr.png" alt="gdpr">
-                                    </div>
-                                    <div class="article__link">
-                                        <h4 class="link">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
-                                        <time class="article__date" datatime="2022-09-29">September 29</time>
-                                    </div>
-                                    <div class="article__text">
-                                        <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-                                    </div>
-                                </li>
-                                <li class="article__container">
-                                    <div class="article__photo">
-                                        <img src="images/millennial.png" alt="millennial">
-                                    </div>
-                                    <div class="article__link">
-                                        <h4 class="link">Millennial Testament</h4>
-                                        <time class="article__date" datatime="2022-08-19">August 19</time>
-                                    </div>
-                                    <div class="article__text">
-                                        <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </main>
             <footer class="footer">
                 <div class="grey-wrapper footer__grey-wrapper">
-                    <div class="container">
-                        <div class="contacts footer__contacts">
+                    <div class="container footer__container">
+                        <div class="footer__contacts--p">
                             <ul class="footer__adress-list">
                                 <li>
                                     <p class="adress footer__adress--color">Kyiv, Mechnikova str, 14/1</p>
@@ -333,40 +171,26 @@
                                     <a class="link" href="https://goo.gl/maps/sRDa4g4wWb3ti56z5">on map</a>
                                 </li>
                             </ul>
+                            <ul class="footer__social">
+                                <li>
+                                    <a class="social" href="https://www.facebook.com/">
+                                        <span class="icon-facebook-b"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="phone footer__phone" href="tel:0800211927">0800 211 927</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__email">contact@forstudy.space</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dev-container">
                             <p class="dev">© 2021 HLEGAL Law company, LLC</p>
                         </div>
-                        <ul class="footer__social">
-                            <li>
-                                <a class="social" href="https://www.facebook.com/">
-                                    <span class="icon-facebook-b"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="phone footer__phone" href="tel:0800211927">0800 211 927</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__email">contact@forstudy.space</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </footer>
         </div> 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            });
-        </script>         
     </body>
 </html>
