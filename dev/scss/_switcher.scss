@@ -131,6 +131,7 @@
     align-items: center;
     overflow: auto;
     margin: 0 -20px;
+    padding: 20px 0;
 
     @media (min-width: 992px) {
         border-right: 4px solid $grey-line;

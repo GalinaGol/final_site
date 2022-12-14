@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 0 0;
+    padding: 14px 0 ;
 
     @media (min-width:768px) {
         padding: 50px 0;
@@ -196,14 +196,12 @@
 }
 
 .menu{
-    position: absolute;
-    z-index: 999;
-    margin: 20px 10px;
+    position: fixed;
+    margin: 18px 25px 0;
     padding: 10px 10px;
-    top: 477px;
     right: 0;
     left: 0;
-    background: #FFFFFF;
+    bottom: 0;
     background: $white;
     border-radius: 12px 12px 0px 0px;
     transform: translateY(100%);
@@ -236,6 +234,10 @@
         ~.menu{
             transform: translateY(0);
             visibility: visible;
+            &:hover{
+                color: $pink-a;
+                transition: all .5s;
+            }
         }
 
         +.burger{
@@ -243,13 +245,13 @@
                 opacity: 0;
             }
             &::before{
-                top:77px;
-                transform: rotate(-45deg) translate(-63%, -50%);
+                top:50%;
+                transform:translate(-50%, -50%) rotate(-45deg);
             }
 
             &::after{
-                top: calc(100% + 56px);
-                transform: rotate(45deg) translate(-64%, -50%);
+                top:50%;
+                transform:translate(-50%, -50%) rotate(45deg);
             }
         }
     }
@@ -257,10 +259,14 @@
 
 .burger{
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    position: absolute;
+    display: block;
     min-height: 18px;
     font-size: 0;
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    top: 75px;
     
     @media (min-width:768px) {
         display: none;
@@ -271,11 +277,12 @@
     &::after{
         content: "";
         position: absolute;
+        transform: translate(-50%, -50%);
         z-index: 999;
-        top:91px;
-        left: 87%;
+        top:50%;
+        right:0;
         height: 2px;
-        width: 30px;
+        width: 25px;
         background: $white;
         transition: all .5s;
 
@@ -287,11 +294,11 @@
     }
 
     &::after{
-        top:calc(100% + 34px);
+        top:calc(100% - 6px);
     }
 
     &::before{
-        top:100px;
+        top:6px;
     }
 }
 

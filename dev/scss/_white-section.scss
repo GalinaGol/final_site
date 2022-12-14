@@ -37,27 +37,27 @@
 
     &__info{
         width: 100%;
-        padding: 0 30px 23px;
-
-            @media (min-width:992px) {
-                width: 70%;
-            }
+        padding: 0 30px;
     }
 
     &__link{
-        margin: 0 36px;
+        margin: 0;
+
+        @media (min-width:768px) {
+            margin: 0 -32px;
+        }
+
+        @media (min-width:992px) {
+            margin: 0;
+        }
     }
 }
 
 .team__photo>img{
     border-radius: 12px 12px 0px 0px;
-
-        @media (min-width:768px) {
-            width: 100%;
-        }
+    width: 100%;
 
         @media (min-width:992px) {
-            width: auto;
             border-radius: 12px 0px 0px 12px;
         }
 }
@@ -67,7 +67,7 @@
     padding: 0 0 10px;
 
     @media (min-width:768px) {
-        padding: 0 10px 43px;
+        padding: 0 0 43px;
     }
 
     @media (min-width:992px) {

@@ -33,24 +33,20 @@ a {
 }
 
 h1{
-    padding: 50px 50px 50px;
-    text-align: center;
-    color: #FFFFFF;
+    margin: 0;
+    color: $white;
     position: absolute;
     line-height: 36px;
+    top: 50%;
     bottom: 50%;
-    left: 11%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 38px;
 
     @media (min-width: 768px){
-        left: 10%;
-        bottom: 35%;
+        font-size: 50px;
     }
-
-    @media (min-width: 992px){
-        left: 23%;
-        bottom: 11%;
-    }
-
 }
 
 h3{
@@ -60,7 +56,7 @@ h3{
 
 h2{
     margin: 0;
-    padding: 20px 50px 0 0;
+    padding: 20px 45px 0 5px;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
@@ -113,6 +109,17 @@ p{
         }
 }
 
+.hvr-forward {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+  .hvr-forward:hover{
+    transform: translateX(8px);
+}
+
 .icon::after{
     content: "\ea50";
     font-family: 'icomoon' !important;
@@ -141,17 +148,21 @@ p{
 
     &:hover{
         color:$pink-a;
-        transition: all .5s;
+        transition: all 1s;
     }
 }
 
 .icon-circle-up{
-    font-size: 58px;
+    font-size: 40px;
     color: $white;
+
+    @media (min-width: 768px){
+        font-size: 58px;
+    }
 
     &:hover{
         color:$pink-a;
-        transition: all .5s;
+        transition: all 1s;
     }
 }
 

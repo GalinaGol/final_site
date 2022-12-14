@@ -14,7 +14,7 @@
 
         @media (min-width:992px) {
             margin: -10px 10px;
-            padding: 30px 0 20px 10px;
+            padding: 65px 0 20px 10px;
         }
     }
 
@@ -68,7 +68,7 @@
 
     &__link,
     &__text{
-        padding: 0 33px 10px 23px;
+        padding: 0 33px 10px 0;
         text-align: left;
     }
 
@@ -76,24 +76,17 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        padding: 13px 33px 24px 23px;
+        padding: 13px 33px 24px 34px;
     }
 
     &__link{
         border-bottom: 4px solid $grey-separator;
-        max-width: 380px;
-        margin: 0 auto;
-
-        h4{
-            padding: 0 36px;
-
-            @media (min-width:768px) {
-                padding: 0;
-            }
-
-        }
+        margin: 0 32px;
     }
 
+    &__title{
+        padding: 0;
+    }
 }
 
 .article img{
@@ -103,11 +96,11 @@
 .publications__link{
     p{
         padding: 0 20px;
-    
-        @media (min-width:768px) {
-            padding: 0 ;
-        }
 
+        @media (min-width:768px) {
+            padding:  39px 0px;
+        }
+       
         @media (min-width:992px) {
             padding: 0 10px ;
         }

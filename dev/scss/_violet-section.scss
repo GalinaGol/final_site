@@ -17,16 +17,35 @@
 
 .banner{
     text-align: center;
+    position: relative;
 }
 
-img.background {
+.background {
     min-height: 100%;
-    width: 100%;
     height: auto;
-    top: 0;
-    left: 0;
 }
   
+.scroll-down{
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+
+    @media (min-width:768px) {
+        bottom: 30px;
+    }
+}
+
+.hvr-sink {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sink:hover{
+    transform: translateY(8px);
+  }
 
 .skill{
     color: $white;
